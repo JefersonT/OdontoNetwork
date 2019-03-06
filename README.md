@@ -29,4 +29,4 @@ Api em NodeJS desenvolvida como Back-End para o sistema de comunicação de uma 
  
 <strong>Nota:</strong>A api foi configurada para rodar em http://localhost:3001.
  
- ¹Para configurar o MongoDB Ler o Arquivo <strong>'NodeJS - MongoDB.txt'</strong>. Útil apenas para windows.
+ ¹Para configurar o MongoDB Ler o Arquivo <strong>'NodeJS - MongoDB.txt'</strong>. <strong>OBS.:</strong> Útil apenas para windows.
