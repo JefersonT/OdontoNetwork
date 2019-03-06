@@ -1,6 +1,5 @@
 # OdontoNetwork
-<p>
-Api em NodeJS desenvolvida como Back-End para o sistema de comunicação de uma rede de clinicas odontológicas OdontoNetwork, no qual foi desenvolvido na disciplina de Laboratório de Desenvolvimento de Software do curso de Ciência da Computação da Universidade Estadual Vale do Acaraú da cidade de Sobral - Ceará - Brasil.</p>
+<p>Api em NodeJS desenvolvida como Back-End para o sistema de comunicação de uma rede de clinicas odontológicas OdontoNetwork, no qual foi desenvolvido na disciplina de Laboratório de Desenvolvimento de Software do curso de Ciência da Computação da Universidade Estadual Vale do Acaraú da cidade de Sobral - Ceará - Brasil.</p>
 
 ## Passo-a-passo para executar e testar o projeto.
 ### Pre-requisitos:
@@ -27,6 +26,6 @@ Api em NodeJS desenvolvida como Back-End para o sistema de comunicação de uma 
    - Em seguida selecionar um dos .har ou .json presente na pasta raiz do projeto que foi baixado. <strong>OBS.:</strong> Presente apenas nas versões mais recentes;
  - Em seguida basta testar cada funcionalidade, começando do mais básico ao mais avançado.
  
-<strong>Nota:</strong>A api foi configurada para rodar em http://localhost:3001.
+<strong>Nota:</strong> A api foi configurada para rodar em http://localhost:3001.
  
  ¹Para configurar o MongoDB Ler o Arquivo <strong>'NodeJS - MongoDB.txt'</strong>. <strong>OBS.:</strong> Útil apenas para windows.
