@@ -30,4 +30,4 @@ A api foi configurada para rodar em http://localhost:3001.
    - Em seguida selecionar um dos .har ou .json presente na pasta raiz do projeto que foi baixado;
  - Em seguida basta testar cada funcionalidade, começando do mais básico ao mais avançado;
  
- ¹Para configurar o MongoDB Ler o Arquivo <strong>'NodeJS - MongoDB.txt'</strong>
+ ¹Para configurar o MongoDB Ler o Arquivo <strong>'NodeJS - MongoDB.txt'</strong>. Útil apenas para windows.
