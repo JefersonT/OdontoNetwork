@@ -17,7 +17,7 @@
  - Verificar se todas as dependencias estão instaladas:
    - No <i>MS Visual Code</i> basta abrir o terminal, através do atalho <strong>Control+'</strong>, e execute o código <code><strong>'npm install'</strong></code>;
    - Em outro IDE que não possua terminal basta abrir a pasta do projeto por Pronpt/Terminal e executar o código <code><strong>'npm install'</strong></code>;
- - Para executar o projeto basta executar o código <strong>'npm run dev'</strong> no terminal, seja no Visual Code ou no Pronpt.
+ - Para executar o projeto basta executar o código <code><strong>'npm run dev'</strong></code> no terminal, seja no Visual Code ou no Pronpt.
 
 ### Para testar o projeto no Insomnia
  - Primeiramente configurar o Insomina:
