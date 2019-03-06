@@ -4,10 +4,15 @@ Api em NodeJS desenvolvida como Back-End para o sistema de comunicação de uma 
 A api foi configurada para rodar em http://localhost:3001.
 Passo-a-passo para executar o projeto.
 Pre-requisitos:
+
   Instalar um IDE, de preferencia MS Visual Code;
+  
   Instalar 'MongoDB';
+  
   Instalar 'Insomnia' para testar as rotas;
+  
   Instalar 'Robo 3T' para visualizar a estrutura do banco no MongoDB;
+  
   Instalar 'npm';
 
 Para executar o projeto:
