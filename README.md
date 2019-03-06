@@ -7,12 +7,13 @@ A api foi configurada para rodar em http://localhost:3001.
 ## Passo-a-passo para executar e testar o projeto.
 
 ### Pre-requisitos:
+ - Instalar <i>'npm'</i>;
+ - Instalar <i>'Node'</i>;
  - Instalar um IDE, de preferencia <i>MS Visual Code</i>;
  - Instalar <i>'MongoDB'</i>;
  - Instalar <i>'Insomnia'</i> para testar as rotas;
  - Instalar <i>'Robo 3T'</i> para visualizar a estrutura do banco no MongoDB;
- - Instalar <i>'npm'</i>;
- - Baixar e extrair o projeto OdontoNetwork;
+ - Baixar e extrair o projeto <i>'OdontoNetwork'</i>;
 
 ### Para executar o projeto:
  - Iniciar o mongoDB¹;
