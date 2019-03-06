@@ -1,0 +1,58 @@
+Start MongoDB Community Edition from the Command Interpreter
+1) Create database and log directories. 
+	Apenas a primeira vez dentro de C:
+		md "\data\db" "\data\log"
+
+2) Start your MongoDB database.
+	To start MongoDB, invoke mongod.exe.
+		"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="c:\data\db"
+	A opção --dbpath aponta para o diretório do seu banco de dados.
+
+Se o servidor de banco de dados MongoDB estiver sendo executado corretamente, o Interpretador de Comandos exibirá:
+
+[initandlisten] waiting for connections
+
+3) Connect to MongoDB.
+	Para conectar-se ao MongoDB através do shell mongo.exe, abra outro Interpretador de Comandos.
+
+		"C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"
+
+
+
+----------------------------------------------------
+Inicie o MongoDB Community Edition como um serviço do Windows
+
+A partir da versão 4.0, você pode instalar e configurar o MongoDB como um Serviço do Windows durante a instalação, e o serviço do MongoDB é iniciado após a instalação bem-sucedida.
+
+Para iniciar / reiniciar o serviço, você pode usar o Gerenciador de Serviços.
+
+Você também pode gerenciar o serviço a partir da linha de comando. Para iniciar o serviço MongoDB a partir da linha de comandos, chame o seguinte comando:
+
+1) Inicie o serviço MongoDB.
+	Feche todos os outros prompts de comando e, em seguida, invoque o seguinte comando:
+
+		net start MongoDB
+
+2) Verifique se o MongoDB foi iniciado com sucesso.
+	Verifique seu arquivo de log do MongoDB para a seguinte linha:
+
+		[initandlisten] waiting for connections on port 27017
+
+Você pode ver avisos não críticos na saída do processo. Enquanto você vir essa mensagem no log do MongoDB, poderá ignorar com segurança esses avisos durante a avaliação inicial do MongoDB.
+
+3) Conecte-se ao servidor do MongoDB.
+	Para conectar-se ao MongoDB através do shell mongo.exe, abra outro Interpretador de Comandos.
+
+		"C:\Program Files\MongoDB\Server\4.0\bin\mongo.exe"
+
+Pare o MongoDB Community Edition como um serviço do Windows
+Para parar / pausar o serviço MongoDB, você pode usar o Gerenciador de Serviços.
+
+Você também pode gerenciar o serviço a partir da linha de comando. Para parar o serviço MongoDB a partir da linha de comandos, invoque o seguinte comando:
+
+		net stop MongoDB
+
+Remover MongoDB Community Edition como um serviço do Windows
+Para remover o serviço MongoDB, primeiro pare o serviço e, em seguida, execute o seguinte comando:
+
+		sc.exe delete MongoDB
