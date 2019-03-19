@@ -24,4 +24,9 @@
 - <strong>Através de Linhas de Comandos</strong>
   - Abra seu shell
   - Inicie o MongoDB
-  
+  - Execute o seguinte comando no shell para cada uma das colletions e seus respectivos arquivos.json presentes na pasta Banco 
+    - `mongoimport -d nome_do_banco -c nome_da_colletion --file caminho/para/o_arquivo/colletion.json`
+  - Exemplos:
+    - `mongoimport -d odontonetworkapi -c cargos --file C:\Users\IFCE\Documents\OdontoNetwork\Banco\cargos.json`
+    - `mongoimport -d odontonetworkapi -c funcionarios --file C:\Users\IFCE\Documents\OdontoNetwork\Banco\funcionarios.json`
+    - `mongoimport -d odontonetworkapi -c grupos --file C:\Users\IFCE\Documents\OdontoNetwork\Banco\grupos.json`
