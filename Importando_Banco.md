@@ -18,5 +18,10 @@
   ![](Importar_Banco/Capturar_05.PNG)
   - Agora clique em `Start Import`
   ![](Importar_Banco/Capturar_06.PNG)
-- <strong>Através de Comandos</strong>
+  - Disfrute do banco
+<Br>
 
+- <strong>Através de Linhas de Comandos</strong>
+  - Abra seu shell
+  - Inicie o MongoDB
+  
