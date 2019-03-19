@@ -3,4 +3,5 @@ Como importar banco
   - Inicie o MongoDB
   - Inicie o Software Studio 3T
   - Conecte o software ao servidor local do MongoDB
-    ![](Importar Banco/Capturar_07.PNG)
+
+![](Importar Banco/Capturar_07.PNG)
