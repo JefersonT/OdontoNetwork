@@ -1,5 +1,5 @@
 <strong><h2>COMO IMPORTAR BANCO MongoDB</h2></strong>
-- <strong>Através do Studio 3T</strong>
+<strong>Através do Studio 3T</strong>
   - Inicie o MongoDB
   - Inicie o Software Studio 3T
   - Conecte o software ao servidor local do MongoDB
@@ -21,7 +21,7 @@
   - Disfrute do banco
 <Br>
 
-- <strong>Através de Linhas de Comandos</strong>
+<strong>Através de Linhas de Comandos</strong>
   - Abra seu shell
   - Inicie o MongoDB
   - Execute o seguinte comando no shell para cada uma das colletions e seus respectivos arquivos.json presentes na pasta Banco 
