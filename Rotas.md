@@ -29,46 +29,46 @@
   delete('http://localhost:3001/api/funcionarios/:funcionario_id'); // deleta funcionario, consequentemente usuário<p>
   
   // Rotas de controle de grupos <br>
-  post('http://localhost:3001/api/grupos/'); <br>
-  get('http://localhost:3001/api/grupos'); <br>
-  get('http://localhost:3001/api/grupos/:grupo_id'); <br>
-  get('http://localhost:3001/api/search_grupos/:toSearch'); <br>
-  put('http://localhost:3001/api/grupos/:grupo_id'); <br>
-  delete('http://localhost:3001/api/grupos/:grupo_id'); <p>
+  post('http://localhost:3001/api/grupos/'); // criar grupo<br>
+  get('http://localhost:3001/api/grupos'); // listar grupos<br>
+  get('http://localhost:3001/api/grupos/:grupo_id'); // listar grupo do id<br>
+  get('http://localhost:3001/api/search_grupos/:toSearch'); // listar grupo por nome do grupo ou por nome de um membro<br>
+  put('http://localhost:3001/api/grupos/:grupo_id'); // atualiza o grupo do id<br>
+  delete('http://localhost:3001/api/grupos/:grupo_id'); // deleta grupo do id<p>
   
   // Rotas de controlle de mensagens <br>
-  post('http://localhost:3001/api/mensagens'); <br>
-  get('http://localhost:3001/api/mensagens'); <br>
-  get('http://localhost:3001/api/mensagens/:mensagem_id'); <br>
-  get('http://localhost:3001/api/mensagens/recebidas/:user_id'); <br>
-  get('http://localhost:3001/api/mensagens/enviadas/:user_id'); <br>
-  get('http://localhost:3001/api/mensagens/arquivadas/:user_id'); <br>
-  put('http://localhost:3001/api/mensagens/visualizar/:mensagem_id/:user_id'); <br>
-  put('http://localhost:3001/api/mensagens/arquivar/:mensagem_id/:user_id'); <br>
-  put('http://localhost:3001/api/mensagens/restaurar/:mensagem_id/:user_id'); <br>
-  delete('http://localhost:3001/api/mensagens/:mensagem_id'); <p>
+  post('http://localhost:3001/api/mensagens'); // criar mensagens<br>
+  get('http://localhost:3001/api/mensagens'); // listar todas mensagens<br>
+  get('http://localhost:3001/api/mensagens/:mensagem_id'); // listar mensagen do id<br>
+  get('http://localhost:3001/api/mensagens/recebidas/:user_id'); // listar mensagens recebidas pelo user_id<br>
+  get('http://localhost:3001/api/mensagens/enviadas/:user_id'); // listar mensagens enviadas pelo user_id<br>
+  get('http://localhost:3001/api/mensagens/arquivadas/:user_id'); // listar mensagens arquivadas pelo user_id<br>
+  put('http://localhost:3001/api/mensagens/visualizar/:mensagem_id/:user_id'); // visualizar mensagem_id pelo user_id<br>
+  put('http://localhost:3001/api/mensagens/arquivar/:mensagem_id/:user_id'); // arquivar mensagem_id pelo user_id<br>
+  put('http://localhost:3001/api/mensagens/restaurar/:mensagem_id/:user_id'); // restaurar mensagem_id aquivada pelo user_id<br>
+  delete('http://localhost:3001/api/mensagens/:mensagem_id'); // deletar mensagem_id<p>
   
   // Rotas de controlle de tarefas <br>
-  post('http://localhost:3001/api/tarefas'); <br>
-  get('http://localhost:3001/api/tarefas'); <br>
-  get('http://localhost:3001/api/tarefas/:tarefa_id'); <br>
-  put('http://localhost:3001/api/tarefas/:tarefa_id'); <br>
-  get('http://localhost:3001/api/tarefas/recebidas/:user_id'); <br>
-  get('http://localhost:3001/api/tarefas/enviadas/:user_id'); <br>
-  get('http://localhost:3001/api/tarefas/arquivadas/:user_id'); <br>
-  put('http://localhost:3001/api/tarefas/visualizar/:tarefa_id/:user_id'); <br>
-  put('http://localhost:3001/api/tarefas/arquivar/:tarefa_id/:user_id'); <br>
-  put('http://localhost:3001/api/tarefas/restaurar/:tarefa_id/:user_id'); <br>
-  put('http://localhost:3001/api/tarefas/apagar/:tarefa_id/:user_id/:local_id'); <br>
-  delete('http://localhost:3001/api/tarefas/:tarefa_id'); <p>
+  post('http://localhost:3001/api/tarefas'); // criar tarefa<br>
+  get('http://localhost:3001/api/tarefas'); // listar tarefas<br>
+  get('http://localhost:3001/api/tarefas/:tarefa_id'); // listar tarefa_id<br>
+  put('http://localhost:3001/api/tarefas/:tarefa_id'); // atualizar tarefa_id<br>
+  get('http://localhost:3001/api/tarefas/recebidas/:user_id'); // listar tarefas recebidas pelo user_id<br>
+  get('http://localhost:3001/api/tarefas/enviadas/:user_id'); // listar tarefas enviadas pelo user_id<br>
+  get('http://localhost:3001/api/tarefas/arquivadas/:user_id'); // listar tarefas arquivadas por user_id<br>
+  put('http://localhost:3001/api/tarefas/visualizar/:tarefa_id/:user_id'); // user_id visualiza a tarefa_id<br>
+  put('http://localhost:3001/api/tarefas/arquivar/:tarefa_id/:user_id'); // user_id arquiva a tarefa_id<br>
+  put('http://localhost:3001/api/tarefas/restaurar/:tarefa_id/:user_id'); // restaura tarefa aquivada por user_id<br>
+  put('http://localhost:3001/api/tarefas/apagar/:tarefa_id/:user_id/:local_id'); // apaga tarefa para user_id sendo local_id = 1 para apagar das recebidas, 2 apagar das enviada e 3 para apagar das arquivadas<br>
+  delete('http://localhost:3001/api/tarefas/:tarefa_id'); // deleta a tarefa completamente do banco<p>
   
   // Rotas de controle de treinamentos <br>
-  post('http://localhost:3001/api/treinamentos'); <br>
-  get('http://localhost:3001/api/treinamentos'); <br>
-  get('http://localhost:3001/api/treinamentos/:treinamento_id'); <br>
-  put('http://localhost:3001/api/treinamentos/:treinamento_id'); <br>
-  put('http://localhost:3001/api/treinamentos/editar/:treinamento_id'); <br>
-  put('http://localhost:3001/api/treinamentos/notas/:treinamento_id'); <br>
-  get('http://localhost:3001/api/treinamentos/user/:user_id'); <br>
-  delete('http://localhost:3001/api/treinamentos/:treinamento_id'); <br>
+  post('http://localhost:3001/api/treinamentos'); // cria o treinamento<br>
+  get('http://localhost:3001/api/treinamentos'); // lista todos os treinamentos<br>
+  get('http://localhost:3001/api/treinamentos/:treinamento_id'); // lista treinamento_id<br>
+  put('http://localhost:3001/api/treinamentos/:treinamento_id'); // muda status do treinamento_id<br>
+  put('http://localhost:3001/api/treinamentos/editar/:treinamento_id'); // editar, atualizar treinamento_id<br>
+  put('http://localhost:3001/api/treinamentos/notas/:treinamento_id'); // inserir a nota do usuario no treinamento_id<br>
+  get('http://localhost:3001/api/treinamentos/user/:user_id'); // lista treinamento direcionados ao user_id<br>
+  delete('http://localhost:3001/api/treinamentos/:treinamento_id'); // deleta o treinamento_id<br>
   
