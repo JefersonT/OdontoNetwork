@@ -1,0 +1,2217 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-03-18T11:47:43.689Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_a12cfefdc6184c20a859f96cd1625072",
+			"created": 1543514129250,
+			"description": "",
+			"modified": 1543514129250,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_0402d753c2e44ed69b9b77a27e8d1c2b",
+			"color": null,
+			"created": 1543514129669,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1543514129669,
+			"modified": 1547220889489,
+			"name": "New Environment",
+			"parentId": "wrk_a12cfefdc6184c20a859f96cd1625072",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_aed415881bd1421aa18544f043756657",
+			"cookies": [],
+			"created": 1543514129704,
+			"modified": 1543514129704,
+			"name": "Default Jar",
+			"parentId": "wrk_a12cfefdc6184c20a859f96cd1625072",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_94a27f501647418692dfd97494c237cc",
+			"created": 1547062734315,
+			"description": "",
+			"environment": {
+				"base_url": "http://localhost:3001/api"
+			},
+			"metaSortKey": -1547062734315,
+			"modified": 1547220872515,
+			"name": "Rocketseat",
+			"parentId": "wrk_a12cfefdc6184c20a859f96cd1625072",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_728d29a7ec3d44f9a9154a4c6a2c1639",
+			"created": 1547227295199,
+			"description": "",
+			"environment": {
+				"base_url": "http://localhost:3001",
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzhkMTRkMDMzZjVjMWFiNGVmNDJiZSIsImlhdCI6MTU0NzIzNjUzMSwiZXhwIjoxNTQ3MzIyOTMxfQ.OOLTdXmL27cDIO6yNI4vAe6HoB4wDX1VikAJO3z94lQ"
+			},
+			"metaSortKey": -1547062543875,
+			"modified": 1547755317978,
+			"name": "OdontoBackEnd(02)",
+			"parentId": "wrk_a12cfefdc6184c20a859f96cd1625072",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_0b31a101d3d04195aba9cee7d75ce7d8",
+			"created": 1547755335756,
+			"description": "",
+			"environment": {
+				"base_url": "http://localhost:3001/api"
+			},
+			"metaSortKey": -1547062353385,
+			"modified": 1547755400180,
+			"name": "OdontoBackEnd Ultima Versão",
+			"parentId": "wrk_a12cfefdc6184c20a859f96cd1625072",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_7574158b11f84b7e9494cde06fd9bd4f",
+			"authentication": {},
+			"body": {},
+			"created": 1543514322213,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1543515519157,
+			"method": "GET",
+			"modified": 1547062763029,
+			"name": "Index",
+			"parameters": [],
+			"parentId": "fld_94a27f501647418692dfd97494c237cc",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/products?page=2",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4889dd1c6d054128af21ac6056659449",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"ReactJS\",\n\t\"description\": \"Biblioteca para criar aplicações interativas com Javascript\",\n\t\"url\": \"http://github.com/facebook/react\"\n}"
+			},
+			"created": 1543515519007,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b3f90c4d02ac4ff08c5f2d1bc2dd85a5",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543515519007,
+			"method": "POST",
+			"modified": 1547062741803,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_94a27f501647418692dfd97494c237cc",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/products",
+			"_type": "request"
+		},
+		{
+			"_id": "req_274b69aed1894be2b76985c51bf0261e",
+			"authentication": {},
+			"body": {},
+			"created": 1543516929676,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1543515519207,
+			"method": "GET",
+			"modified": 1547077455944,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_94a27f501647418692dfd97494c237cc",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/products/5c002e99425d2231a022e683",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1cc450c1caa94e2697e65a4d90077ba8",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"ReactJS\"\n}"
+			},
+			"created": 1543517505675,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b3f90c4d02ac4ff08c5f2d1bc2dd85a5",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543515519107,
+			"method": "PUT",
+			"modified": 1547062755863,
+			"name": "Update",
+			"parameters": [],
+			"parentId": "fld_94a27f501647418692dfd97494c237cc",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/products/5c002e99425d2231a022e683",
+			"_type": "request"
+		},
+		{
+			"_id": "req_23514ed348704a18b3a684fa88457c5b",
+			"authentication": {},
+			"body": {},
+			"created": 1543517873488,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1543515519057,
+			"method": "DELETE",
+			"modified": 1547062751620,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_94a27f501647418692dfd97494c237cc",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/products/5c002e99425d2231a022e683",
+			"_type": "request"
+		},
+		{
+			"_id": "fld_c87deab3f40447ad900c71a01f23d98e",
+			"created": 1547227295211,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547220946320,
+			"modified": 1547227295211,
+			"name": "Auth",
+			"parentId": "fld_728d29a7ec3d44f9a9154a4c6a2c1639",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_6d8f59bcf2d64444b3279ed231f6e069",
+			"created": 1547227295272,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547221011649,
+			"modified": 1547227295272,
+			"name": "Projects",
+			"parentId": "fld_728d29a7ec3d44f9a9154a4c6a2c1639",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_9eebb803aa734528ba5b2af0632f3b2e",
+			"created": 1547755335769,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547220946320,
+			"modified": 1547755335769,
+			"name": "Auth",
+			"parentId": "fld_0b31a101d3d04195aba9cee7d75ce7d8",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_145df79cd04f462498d04533ce242512",
+			"created": 1547755335823,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547220974901.4375,
+			"modified": 1548280085487,
+			"name": "Funcionario",
+			"parentId": "fld_0b31a101d3d04195aba9cee7d75ce7d8",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_7130ff8e4209499f86196dad5fad621f",
+			"created": 1547756955281,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547220946270,
+			"modified": 1547773128452,
+			"name": "Cargo",
+			"parentId": "fld_0b31a101d3d04195aba9cee7d75ce7d8",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_e47e6215af3c46529f3355b0bc484dac",
+			"created": 1547756967297,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547220962652.25,
+			"modified": 1547757030364,
+			"name": "User",
+			"parentId": "fld_0b31a101d3d04195aba9cee7d75ce7d8",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_40a3a0a663c943f7928bd777caf170ef",
+			"created": 1548280061486,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1547220987150.625,
+			"modified": 1548280079771,
+			"name": "Grupo",
+			"parentId": "fld_0b31a101d3d04195aba9cee7d75ce7d8",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_4693d66cf4024f49a4c8c54a1e7eb65b",
+			"created": 1548452838278,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1548452838278,
+			"modified": 1548452838278,
+			"name": "Mensagem",
+			"parentId": "fld_0b31a101d3d04195aba9cee7d75ce7d8",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"created": 1551206112483,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1548452838328,
+			"modified": 1551206131163,
+			"name": "Tarefa",
+			"parentId": "fld_0b31a101d3d04195aba9cee7d75ce7d8",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_3bc91ee991c9462696f86005d3a3f70d",
+			"created": 1551445636301,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1548452838378,
+			"modified": 1551445659333,
+			"name": "Treinamento",
+			"parentId": "fld_0b31a101d3d04195aba9cee7d75ce7d8",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_bd811a3fc9a14d40a73953da51ecccc6",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Jeferson Torres\",\n\t\"email\": \"jefersontorres.f@gmail.com\",\n\t\"password\": \"1234567\"\n}"
+			},
+			"created": 1547227295223,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b3bd4f92204e4494ab60f2ca89115b9b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546254949707.25,
+			"method": "POST",
+			"modified": 1547227467960,
+			"name": "Register",
+			"parameters": [],
+			"parentId": "fld_c87deab3f40447ad900c71a01f23d98e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/auth/register",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c6c08086fa2948a5b288e748c5d947ac",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"jefersontorres.f@gmail.com\",\n\t\"password\": \"1234567\"\n}"
+			},
+			"created": 1547227295235,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b3bd4f92204e4494ab60f2ca89115b9b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546254949682.25,
+			"method": "POST",
+			"modified": 1547236528787,
+			"name": "Authenticate",
+			"parameters": [],
+			"parentId": "fld_c87deab3f40447ad900c71a01f23d98e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/auth/authenticate",
+			"_type": "request"
+		},
+		{
+			"_id": "req_cdc284b9427e44cd986965f99174b55c",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"jtf.10@hotmail.com\"\n}"
+			},
+			"created": 1547227295248,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b3bd4f92204e4494ab60f2ca89115b9b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546254949669.75,
+			"method": "POST",
+			"modified": 1547227295248,
+			"name": "Forgot Password",
+			"parameters": [],
+			"parentId": "fld_c87deab3f40447ad900c71a01f23d98e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/auth/forgot_password",
+			"_type": "request"
+		},
+		{
+			"_id": "req_489673b0ca814c518de7a5e3ed8f56dc",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"jtf.10@hotmail.com\",\n\t\"token\": \"3d9fde1cde400cf766249b9b270b5f65b5d05c9a\",\n\t\"password\": \"12345678\"\n}"
+			},
+			"created": 1547227295261,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b3bd4f92204e4494ab60f2ca89115b9b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546254949657.25,
+			"method": "POST",
+			"modified": 1547227295261,
+			"name": "Reset Password",
+			"parameters": [],
+			"parentId": "fld_c87deab3f40447ad900c71a01f23d98e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/auth/reset_password",
+			"_type": "request"
+		},
+		{
+			"_id": "req_bb6b6b8ac9ba46759547f0f3acc9c72a",
+			"authentication": {
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547227295283,
+			"description": "",
+			"headers": [
+				{
+					"disabled": true,
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547137800202,
+			"method": "GET",
+			"modified": 1547227684185,
+			"name": "List",
+			"parameters": [],
+			"parentId": "fld_6d8f59bcf2d64444b3279ed231f6e069",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/projects",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2ad47db867df4d3aac843d75a15e8c76",
+			"authentication": {
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547227295297,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546696374954.625,
+			"method": "GET",
+			"modified": 1547294916828,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_6d8f59bcf2d64444b3279ed231f6e069",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/projects/5c39d8130dcdc2007c566a68",
+			"_type": "request"
+		},
+		{
+			"_id": "req_de0ac96fc3284ce4832d0e9f915cbf43",
+			"authentication": {
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"Novo projeto 10\",\n\t\"description\": \"Descrição de projecto\",\n\t\"tasks\": [\n\t\t{\n\t\t\t\"title\": \"Nova tarefas\",\n\t\t\t\"assignedTo\": \"5c38feda918029075cee6cca\"\n\t\t},\n\t\t{\n\t\t\t\"title\": \"Nova tarefas 02\",\n\t\t\t\"assignedTo\": \"5c38feda918029075cee6cca\"\n\t\t}\n\t]\n}"
+			},
+			"created": 1547227295309,
+			"description": "",
+			"headers": [
+				{
+					"disabled": false,
+					"id": "pair_165e0232505e4b74861b73bad02e033b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546475662330.9375,
+			"method": "POST",
+			"modified": 1547300304790,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_6d8f59bcf2d64444b3279ed231f6e069",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/projects",
+			"_type": "request"
+		},
+		{
+			"_id": "req_73f3b27eb9da4505b8eb9d000b8e7d52",
+			"authentication": {
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"Novo projeto 10\",\n\t\"description\": \"Descrição de projecto\",\n\t\"tasks\": [\n\t\t{\n\t\t\t\"title\": \"Nova tarefas\",\n\t\t\t\"assignedTo\": \"5c38feda918029075cee6cca\"\n\t\t}\n\t]\n}"
+			},
+			"created": 1547227295322,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				},
+				{
+					"id": "pair_d496554b120a4d7d81ad4e19c9362ea5",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546365306019.0938,
+			"method": "PUT",
+			"modified": 1547300372959,
+			"name": "Update",
+			"parameters": [],
+			"parentId": "fld_6d8f59bcf2d64444b3279ed231f6e069",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/projects/5c39edd292bd3002f4e4240e",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2fc1c97bb9b9466dbc94ee6cda8d8bf4",
+			"authentication": {
+				"token": "{{ token  }}",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547227295333,
+			"description": "",
+			"headers": [
+				{
+					"disabled": true,
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546310127863.1719,
+			"method": "DELETE",
+			"modified": 1547300794871,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_6d8f59bcf2d64444b3279ed231f6e069",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/projects/5c39ef9fa0cea302700ce7c9",
+			"_type": "request"
+		},
+		{
+			"_id": "req_020c41ba4ee94529baa501d041946f0e",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Jeferson To\",\n\t\"email\": \"jefersontor@gmail.com\",\n\t\"password\": \"123456\"\n}"
+			},
+			"created": 1547755335780,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b3bd4f92204e4494ab60f2ca89115b9b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546254949707.25,
+			"method": "POST",
+			"modified": 1547761163877,
+			"name": "Register",
+			"parameters": [],
+			"parentId": "fld_9eebb803aa734528ba5b2af0632f3b2e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/auth/register",
+			"_type": "request"
+		},
+		{
+			"_id": "req_cb9d3114216b4150b488d69311571786",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"jefersontorres.f@gmail.com\",\n\t\"password\": \"12345678\"\n}"
+			},
+			"created": 1547755335791,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b3bd4f92204e4494ab60f2ca89115b9b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546254949682.25,
+			"method": "POST",
+			"modified": 1551984322870,
+			"name": "Authenticate",
+			"parameters": [],
+			"parentId": "fld_9eebb803aa734528ba5b2af0632f3b2e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/auth/authenticate",
+			"_type": "request"
+		},
+		{
+			"_id": "req_0672a07992134fd991b7a7b0a8c76ea2",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"jefersontorres.f@gmail.com\"\n}"
+			},
+			"created": 1547755335802,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b3bd4f92204e4494ab60f2ca89115b9b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546254949669.75,
+			"method": "POST",
+			"modified": 1551983458076,
+			"name": "Forgot Password",
+			"parameters": [],
+			"parentId": "fld_9eebb803aa734528ba5b2af0632f3b2e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/auth/forgot_password",
+			"_type": "request"
+		},
+		{
+			"_id": "req_7ef4c60921454282997e159347c45e0a",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"jefersontorres.f@gmail.com\",\n\t\"token\": \"2a0e715fd01a85184c6d1bfa9370ed3e8a3fdb5b\",\n\t\"password\": \"12345678\"\n}"
+			},
+			"created": 1547755335812,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b3bd4f92204e4494ab60f2ca89115b9b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546254949657.25,
+			"method": "POST",
+			"modified": 1551984310625,
+			"name": "Reset Password",
+			"parameters": [],
+			"parentId": "fld_9eebb803aa734528ba5b2af0632f3b2e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/auth/reset_password",
+			"_type": "request"
+		},
+		{
+			"_id": "req_0562301484f64e0b8b14d667e561f43a",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547755335840,
+			"description": "",
+			"headers": [
+				{
+					"disabled": true,
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547137800202,
+			"method": "GET",
+			"modified": 1547841606325,
+			"name": "List",
+			"parameters": [],
+			"parentId": "fld_145df79cd04f462498d04533ce242512",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/funcionarios",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fe00229c997f4a7ca6d1f4c9e27da822",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547755335863,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546696374954.625,
+			"method": "GET",
+			"modified": 1552827486752,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_145df79cd04f462498d04533ce242512",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/funcionarios/5c8e445412e12015fc6842d3",
+			"_type": "request"
+		},
+		{
+			"_id": "req_37a9df0ef7474317abe9dd5f32bcc86d",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Mestre dos Testes\",\n\t\"email\": \"mestresdostestes@gmail.com\",\n\t\"password\": \"123456\",\n\t\"clinica\": \"São José\",\n\t\"data_nascimento\": \"30-05-1989\",\n\t\"cpf\": 77788899900,\n\t\"cargo\": \"5c4369f275d1c625a0ed9941\"\n}"
+			},
+			"created": 1547755335885,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0e07d4b6fa704a169146b0dbdb7ae920",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547137800252,
+			"method": "POST",
+			"modified": 1552827411343,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_145df79cd04f462498d04533ce242512",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/funcionarios",
+			"_type": "request"
+		},
+		{
+			"_id": "req_83fb1222643e48f3974bd35f3eaf73f8",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Leonardo Antonio Bonfim Macedo\",\n\t\"email\": \"leobonfim@gmail.com\",\n\t\"password\": \"123456\",\n\t\"clinica\": \"São Tomé\",\n\t\"data_nascimento\": \"22-02-1992\",\n\t\"cpf\": 33344455566,\n\t\"cargo\": \"5c436d8575d1c625a0ed9947\"\n}"
+			},
+			"created": 1547755335907,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				},
+				{
+					"id": "pair_208e6e63062349208458e1447e6f2880",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546365306019.0938,
+			"method": "PUT",
+			"modified": 1547926136013,
+			"name": "Update",
+			"parameters": [],
+			"parentId": "fld_145df79cd04f462498d04533ce242512",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/funcionarios/5c437816f35f5e0f6c04323f",
+			"_type": "request"
+		},
+		{
+			"_id": "req_70fe1df973d54315bb258331b17550e2",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547755335929,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546310127863.1719,
+			"method": "DELETE",
+			"modified": 1552908406585,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_145df79cd04f462498d04533ce242512",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/funcionarios/5c8e445412e12015fc6842d3",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ea38f3a585be409a97abc8519cdff722",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547811689278,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546586018642.7812,
+			"method": "GET",
+			"modified": 1548890855101,
+			"name": "Search",
+			"parameters": [],
+			"parentId": "fld_145df79cd04f462498d04533ce242512",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/search_funcionarios/fim",
+			"_type": "request"
+		},
+		{
+			"_id": "req_26394405818c4bb4af0bcae0649f3cee",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547756955396,
+			"description": "",
+			"headers": [
+				{
+					"disabled": true,
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547137800202,
+			"method": "GET",
+			"modified": 1547760847369,
+			"name": "List",
+			"parameters": [],
+			"parentId": "fld_7130ff8e4209499f86196dad5fad621f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/cargos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f0c1f95df3804c2db426f96049c1d56a",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547756955498,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546696374954.625,
+			"method": "GET",
+			"modified": 1552828189950,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_7130ff8e4209499f86196dad5fad621f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/cargos/5c4369f275d1c625a0ed9941",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1655e6cb7e9741b8aad10abdfc2f2447",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n    \"nome\": \"Secretário\",\n    \"descricao\": \"Responsavel por marcar e organizar os horarios das consultas, operações odontológicas e atendimento ao cliente\",\n    \"salario\": 1500.94,\n    \"permissao\": \"Usuário padrão\"\n}"
+			},
+			"created": 1547756955523,
+			"description": "",
+			"headers": [
+				{
+					"disabled": false,
+					"id": "pair_230ad89b5ffa4d96b4e394b35f69099f",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546475662330.9375,
+			"method": "POST",
+			"modified": 1547922890642,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_7130ff8e4209499f86196dad5fad621f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/cargos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_cf41d17054ee473f9547d63b7c34e030",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"nome\": \"Proprietário\",\n\t\"descricao\": \"Representande e dono da empresa, possue poder máximo\",\n\t\"salario\": 19557.94,\n\t\"permissao\": \"Administrador\"\n}"
+			},
+			"created": 1547756955548,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				},
+				{
+					"id": "pair_17c4058f61fe4fa0b867a76eea7acb46",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546365306019.0938,
+			"method": "PUT",
+			"modified": 1548713611530,
+			"name": "Update",
+			"parameters": [],
+			"parentId": "fld_7130ff8e4209499f86196dad5fad621f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/cargos/5c436cd975d1c625a0ed9945",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4ae94fd853f8420abc55d61b8a5baeb0",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547756955574,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546310127863.1719,
+			"method": "DELETE",
+			"modified": 1547759043828,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_7130ff8e4209499f86196dad5fad621f",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/cargos/5c40edad48dd28032ca8b6dd",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d5199e4b380846628c91a9d578d53245",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547756967310,
+			"description": "",
+			"headers": [
+				{
+					"disabled": true,
+					"id": "pair_b3eab5dfee13430987c73390519d4012",
+					"name": "",
+					"value": ""
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547137800202,
+			"method": "GET",
+			"modified": 1547760751381,
+			"name": "List",
+			"parameters": [],
+			"parentId": "fld_e47e6215af3c46529f3355b0bc484dac",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/users",
+			"_type": "request"
+		},
+		{
+			"_id": "req_615ad313aecd458a89f455917c8aa203",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547756967321,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1546696374954.625,
+			"method": "GET",
+			"modified": 1552827501715,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_e47e6215af3c46529f3355b0bc484dac",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/users/5c8e445412e12015fc6842d4",
+			"_type": "request"
+		},
+		{
+			"_id": "req_870f413da8d74d4ba6bd7403214c0870",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"name\": \"Jeferson Torres\",\n\t\"email\": \"jefersontorres.f@gmail.com\"\n}"
+			},
+			"created": 1547756967355,
+			"description": "",
+			"headers": [
+				{
+					"disabled": true,
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				},
+				{
+					"id": "pair_885adfb06bf44cdaabb6f78f31affbf0",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546365306019.0938,
+			"method": "PUT",
+			"modified": 1547772170141,
+			"name": "Update",
+			"parameters": [],
+			"parentId": "fld_e47e6215af3c46529f3355b0bc484dac",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/users/5c410c65ae2c7f2dd863f59c",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e08be76d8efe44e9a95a0034457fc59c",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1547756967367,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546310127863.1719,
+			"method": "DELETE",
+			"modified": 1547766773197,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_e47e6215af3c46529f3355b0bc484dac",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/users/5c40ffeb659eda34e02c048f",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9384362cacb547578239cff5b7a5d219",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1548280061506,
+			"description": "",
+			"headers": [
+				{
+					"disabled": true,
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1547137800202,
+			"method": "GET",
+			"modified": 1548281890905,
+			"name": "List",
+			"parameters": [],
+			"parentId": "fld_40a3a0a663c943f7928bd777caf170ef",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/grupos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3dabbfe5170b487c8f3f8829ae8b5a4e",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1548280061521,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546696374954.625,
+			"method": "GET",
+			"modified": 1548335160708,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_40a3a0a663c943f7928bd777caf170ef",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/grupos/5c49b68aedbcb022247a6db3",
+			"_type": "request"
+		},
+		{
+			"_id": "req_52f14f418d43462383b4165e18dea6c2",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"titulo\": \"Quinto teste deletar grupos fundados pelo usuario deletado\",\n\t\"fundador\": {\"_id\": \"5c8e445412e12015fc6842d4\"},\n\t\"membros\": [\n\t\t{\"_id\": \"5c437816f35f5e0f6c043240\"},\n\t\t{\"_id\": \"5c4374ecf35f5e0f6c04323c\"},\n\t\t{\"_id\": \"5c437880f35f5e0f6c043242\"}\n\t]\n}"
+			},
+			"created": 1548280061540,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_0e07d4b6fa704a169146b0dbdb7ae920",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546475662330.9375,
+			"method": "POST",
+			"modified": 1552827973315,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_40a3a0a663c943f7928bd777caf170ef",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/grupos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_bc8cfa381f9344118a9ee041eb5d9ce4",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"titulo\": \"Primeiro teste UpDate\",\n\t\"fundador\": {\"_id\": \"5c437880f35f5e0f6c043242\"},\n\t\"membros\": [\n\t\t{\"_id\": \"5c437784f35f5e0f6c04323e\"},\n\t\t{\"_id\": \"5c437816f35f5e0f6c043240\"},\n\t\t{\"_id\": \"5c4374ecf35f5e0f6c04323c\"}\n\t]\n}"
+			},
+			"created": 1548280061556,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				},
+				{
+					"id": "pair_208e6e63062349208458e1447e6f2880",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546365306019.0938,
+			"method": "PUT",
+			"modified": 1548346347114,
+			"name": "Update",
+			"parameters": [],
+			"parentId": "fld_40a3a0a663c943f7928bd777caf170ef",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/grupos/5c49b68aedbcb022247a6db3",
+			"_type": "request"
+		},
+		{
+			"_id": "req_84a1edb8dec8493985da03e3d4cc5576",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1548280061572,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546310127863.1719,
+			"method": "DELETE",
+			"modified": 1548336993847,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_40a3a0a663c943f7928bd777caf170ef",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/grupos/5c49bf3ecba62e26d8f5841b",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6f799d3ca5024f8fb218110b42d85396",
+			"authentication": {
+				"token": "",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1548280061589,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_945b23bdde784cb5833c3db784ad745e",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjMzc1ZWI3MjU4NWNjMWYwNGIwZDc4YSIsImlhdCI6MTU0NzIyMDM2NCwiZXhwIjoxNTQ3MzA2NzY0fQ.ixkiWzfs-iv9-HWfamEEcmEq16_fn7hdLEjuwqp1zyc"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1546586018642.7812,
+			"method": "GET",
+			"modified": 1548451565011,
+			"name": "Search",
+			"parameters": [],
+			"parentId": "fld_40a3a0a663c943f7928bd777caf170ef",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/search_grupos/Up",
+			"_type": "request"
+		},
+		{
+			"_id": "req_284387df909040e7bfee0a33400b395b",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"assunto\": \"Teste remoção usuario 2\",\n\t\"remetente\": \"5c8e445412e12015fc6842d4\",\n\t\"texto\": \"Esta mensagem foi criada para testa o destry de mensagem enviadas por usuários deletados\",\n\t\"destinatarios\": [\n\t\t\"5c437816f35f5e0f6c043240\",\n\t\t\"5c437880f35f5e0f6c043242\",\n\t\t\"5c437784f35f5e0f6c04323e\"\n\t]\n}"
+			},
+			"created": 1548848066611,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1d8f369e3df54b1dbc1f13220fc01b2b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1548848412978,
+			"method": "POST",
+			"modified": 1552828102036,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_4693d66cf4024f49a4c8c54a1e7eb65b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/mensagens",
+			"_type": "request"
+		},
+		{
+			"_id": "req_b517bf5a5d474db49c8859a4c6af0304",
+			"authentication": {},
+			"body": {},
+			"created": 1548848094725,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848355339,
+			"method": "GET",
+			"modified": 1548848586069,
+			"name": "List",
+			"parameters": [],
+			"parentId": "fld_4693d66cf4024f49a4c8c54a1e7eb65b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/mensagens",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ac255650c9c847d3a68bbf2102b6d4af",
+			"authentication": {},
+			"body": {},
+			"created": 1548848117295,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848326519.5,
+			"method": "GET",
+			"modified": 1549049298098,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_4693d66cf4024f49a4c8c54a1e7eb65b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/mensagens/5c549c49aefa7d37ac1d60d7",
+			"_type": "request"
+		},
+		{
+			"_id": "req_7ead7f1de0034aa794bad92e43e52ecd",
+			"authentication": {},
+			"body": {},
+			"created": 1548848128781,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848312109.75,
+			"method": "GET",
+			"modified": 1548939840749,
+			"name": "ShowRecebidas",
+			"parameters": [],
+			"parentId": "fld_4693d66cf4024f49a4c8c54a1e7eb65b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/mensagens/recebidas/5c437784f35f5e0f6c04323e",
+			"_type": "request"
+		},
+		{
+			"_id": "req_09399935c90c42cd8fed99fd91a18f23",
+			"authentication": {},
+			"body": {},
+			"created": 1548848189599,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848304904.875,
+			"method": "GET",
+			"modified": 1548940214843,
+			"name": "ShowEnviadas",
+			"parameters": [],
+			"parentId": "fld_4693d66cf4024f49a4c8c54a1e7eb65b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/mensagens/enviadas/5c437816f35f5e0f6c043240",
+			"_type": "request"
+		},
+		{
+			"_id": "req_4422d8e33f3b46fe9f9d1f084b4ed337",
+			"authentication": {},
+			"body": {},
+			"created": 1548848235417,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848301302.4375,
+			"method": "GET",
+			"modified": 1549024771743,
+			"name": "ShowArquivadas",
+			"parameters": [],
+			"parentId": "fld_4693d66cf4024f49a4c8c54a1e7eb65b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/mensagens/arquivadas/5c437816f35f5e0f6c043240 ",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6da4903fcb614952bea2b75f12810eef",
+			"authentication": {},
+			"body": {},
+			"created": 1548848297700,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848297700,
+			"method": "PUT",
+			"modified": 1549049445582,
+			"name": "Visualizar",
+			"parameters": [],
+			"parentId": "fld_4693d66cf4024f49a4c8c54a1e7eb65b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/mensagens/visualizar/5c549c49aefa7d37ac1d60d7/5c437816f35f5e0f6c043240",
+			"_type": "request"
+		},
+		{
+			"_id": "req_460ed55faac74f6ab05e341435fba2bd",
+			"authentication": {},
+			"body": {},
+			"created": 1548848303933,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848196212.5,
+			"method": "PUT",
+			"modified": 1549049384473,
+			"name": "Arquivar",
+			"parameters": [],
+			"parentId": "fld_4693d66cf4024f49a4c8c54a1e7eb65b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/mensagens/arquivar/5c549c49aefa7d37ac1d60d7/5c437816f35f5e0f6c043240",
+			"_type": "request"
+		},
+		{
+			"_id": "req_01b4572b814e4a789483d0bed32c5506",
+			"authentication": {},
+			"body": {},
+			"created": 1548848306698,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848145468.75,
+			"method": "PUT",
+			"modified": 1549049336114,
+			"name": "Restaurar",
+			"parameters": [],
+			"parentId": "fld_4693d66cf4024f49a4c8c54a1e7eb65b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/mensagens/restaurar/5c549c49aefa7d37ac1d60d7/5c4374ecf35f5e0f6c04323c",
+			"_type": "request"
+		},
+		{
+			"_id": "req_814307792e9a46b08b6d7e76d69e1e03",
+			"authentication": {},
+			"body": {},
+			"created": 1548848412928,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848068319.0625,
+			"method": "DELETE",
+			"modified": 1549048900187,
+			"name": "Destroy",
+			"parameters": [],
+			"parentId": "fld_4693d66cf4024f49a4c8c54a1e7eb65b",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/mensagens/5c5495fa59caea16508d36bc",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3c6fe1366406422cb07266cf700cb284",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"assunto\": \"Teste remoção usuario 2\",\n\t\"remetente\": \"5c8e445412e12015fc6842d4\",\n\t\"texto\": \"Tarefa criada para testar a remoção de tarefas ao usuario remetente que foi apagada\",\n\t\"destinatario\": \"5c4374ecf35f5e0f6c04323c\",\n\t\"prazo\": \"06-04-2019\"\n}"
+			},
+			"created": 1551206112499,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1d8f369e3df54b1dbc1f13220fc01b2b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1548848412978,
+			"method": "POST",
+			"modified": 1552828493367,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a642c48f6b1a4abcbcfa5f5efe325259",
+			"authentication": {},
+			"body": {},
+			"created": 1551206112513,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848355339,
+			"method": "GET",
+			"modified": 1551206232158,
+			"name": "List",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas",
+			"_type": "request"
+		},
+		{
+			"_id": "req_dd0a241eeccc4c3485689e346af45fc5",
+			"authentication": {},
+			"body": {},
+			"created": 1551206112525,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848326519.5,
+			"method": "GET",
+			"modified": 1551360445094,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas/5c76d3dc9e0c1035344aed39",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c3ee50b6756b474a891e19142fd654cf",
+			"authentication": {},
+			"body": {},
+			"created": 1551206112536,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848312109.75,
+			"method": "GET",
+			"modified": 1551355119845,
+			"name": "ShowRecebidas",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas/recebidas/5c437880f35f5e0f6c043242",
+			"_type": "request"
+		},
+		{
+			"_id": "req_989517b91ce5490cbe83dc7d4c081bee",
+			"authentication": {},
+			"body": {},
+			"created": 1551206112548,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848304904.875,
+			"method": "GET",
+			"modified": 1551214911167,
+			"name": "ShowEnviadas",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas/enviadas/5c4374ecf35f5e0f6c04323c",
+			"_type": "request"
+		},
+		{
+			"_id": "req_28f4becd21ad4102b04d4c2aa23c9277",
+			"authentication": {},
+			"body": {},
+			"created": 1551206112563,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848301302.4375,
+			"method": "GET",
+			"modified": 1551356494461,
+			"name": "ShowArquivadas",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas/arquivadas/5c4374ecf35f5e0f6c04323c",
+			"_type": "request"
+		},
+		{
+			"_id": "req_1f7c7eec939547eb94f1a30e9978e911",
+			"authentication": {},
+			"body": {},
+			"created": 1551206112575,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848297700,
+			"method": "PUT",
+			"modified": 1551292024671,
+			"name": "Visualizar",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas/visualizar/5c76d3dc9e0c1035344aed39/5c437784f35f5e0f6c04323e",
+			"_type": "request"
+		},
+		{
+			"_id": "req_621181905349427d8fb664a131e17477",
+			"authentication": {},
+			"body": {},
+			"created": 1551206112598,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848196212.5,
+			"method": "PUT",
+			"modified": 1551356485241,
+			"name": "Arquivar",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas/arquivar/5c76d3dc9e0c1035344aed39/5c4374ecf35f5e0f6c04323c",
+			"_type": "request"
+		},
+		{
+			"_id": "req_fa7e2e006af442dbab348faa8b4df024",
+			"authentication": {},
+			"body": {},
+			"created": 1551206112610,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848145468.75,
+			"method": "PUT",
+			"modified": 1551356521139,
+			"name": "Restaurar",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas/restaurar/5c76d3dc9e0c1035344aed39/5c4374ecf35f5e0f6c04323c",
+			"_type": "request"
+		},
+		{
+			"_id": "req_e4a4bd4bc9b44062ac554851f3d21abd",
+			"authentication": {},
+			"body": {},
+			"created": 1551206112620,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848068319.0625,
+			"method": "DELETE",
+			"modified": 1551291172523,
+			"name": "Destroy",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas/5c76d2bbbe978e191c207474",
+			"_type": "request"
+		},
+		{
+			"_id": "req_446cdce7b42d4638911bd31ccbb84554",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"status\": \"concluido\",\n\t\"motivo\": \"Relatório iniciado\"\n}"
+			},
+			"created": 1551208664593,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_a401523e037a42d6ae50cc46a4b6e514",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1548848319314.625,
+			"method": "PUT",
+			"modified": 1552908640813,
+			"name": "ChangeStatus",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas/5c8e48561c734103d83d7a04",
+			"_type": "request"
+		},
+		{
+			"_id": "req_8a7a3a161cb04e91a413c1dd0e814360",
+			"authentication": {},
+			"body": {},
+			"created": 1551356579493,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848106893.9062,
+			"method": "PUT",
+			"modified": 1551360655756,
+			"name": "Deletar",
+			"parameters": [],
+			"parentId": "fld_cb3bd94375b046a882f9a446fa849ff7",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/tarefas/apagar/5c76d3dc9e0c1035344aed39/5c4374ecf35f5e0f6c04323c/3",
+			"_type": "request"
+		},
+		{
+			"_id": "req_cf137aa35a8049d8bd90d658776d0d93",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"titulo\": \"Treinamento para testar usuáio deletado para remetente\",\n\t\"url\": \"https://www.youtube.com/watch?v=fBJbGldJse4&list=PLsrki10fiYkTijQ8aMTThzQ0bYSAoJRdZ\",\n\t\"formulario\": \"Formulario vindo do front end\",\n\t\"prazo\": \"06-04-2019\",\n\t\"remetente\": \"5c8e445412e12015fc6842d4\",\n\t\"destinatarios\": [\n\t\t\"5c4374ecf35f5e0f6c04323c\",\n\t\t\"5c437816f35f5e0f6c043240\",\n\t\t\"5c437880f35f5e0f6c043242\"]\n}"
+			},
+			"created": 1551445636317,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_1d8f369e3df54b1dbc1f13220fc01b2b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1548848412978,
+			"method": "POST",
+			"modified": 1552829195305,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_3bc91ee991c9462696f86005d3a3f70d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/treinamentos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_92f76dbf89354573a577f726f358ad7b",
+			"authentication": {},
+			"body": {},
+			"created": 1551445636329,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848355339,
+			"method": "GET",
+			"modified": 1551445826823,
+			"name": "List",
+			"parameters": [],
+			"parentId": "fld_3bc91ee991c9462696f86005d3a3f70d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/treinamentos",
+			"_type": "request"
+		},
+		{
+			"_id": "req_bac69449e0e948c384285ea8600945f1",
+			"authentication": {},
+			"body": {},
+			"created": 1551445636345,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848326519.5,
+			"method": "GET",
+			"modified": 1552908318262,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_3bc91ee991c9462696f86005d3a3f70d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/treinamentos/5c8e4b0d5bdb7d13b8320a68",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3a563d406a6046df8d51e47670ce6caa",
+			"authentication": {},
+			"body": {},
+			"created": 1551445636358,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848087606.4844,
+			"method": "GET",
+			"modified": 1551890941648,
+			"name": "ShowTreinamentosUser",
+			"parameters": [],
+			"parentId": "fld_3bc91ee991c9462696f86005d3a3f70d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/treinamentos/user/5c437880f35f5e0f6c043242",
+			"_type": "request"
+		},
+		{
+			"_id": "req_deb4665982af4a51a239ab7cca374651",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"titulo\": \"Treinamento para teste de Update - Depois\",\n\t\"url\": \"https://www.youtube.com/watch?v=fBJbGldJse4&list=PLsrki10fiYkTijQ8aMTThzQ0bYSAoJRdZ\",\n\t\"formulario\": \"Formulario vindo do front end update\",\n\t\"prazo\": \"04-05-2019\",\n\t\"destinatarios\": [\n\t\t\"5c437784f35f5e0f6c04323e\",\n\t\t\"5c437816f35f5e0f6c043240\"]\n}"
+			},
+			"created": 1551445636417,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b01dbb5d2fdf4aa48a34267bb898d3be",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1548848145468.75,
+			"method": "PUT",
+			"modified": 1551894586517,
+			"name": "Update",
+			"parameters": [],
+			"parentId": "fld_3bc91ee991c9462696f86005d3a3f70d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/treinamentos/editar/5c8007892eeadc03e0f4d88d",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5d7d4b872bde461db75e7ea18c28d698",
+			"authentication": {},
+			"body": {},
+			"created": 1551445636430,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1548848068319.0625,
+			"method": "DELETE",
+			"modified": 1551894401634,
+			"name": "Destroy",
+			"parameters": [],
+			"parentId": "fld_3bc91ee991c9462696f86005d3a3f70d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/treinamentos/5c8006cd0b6fae02e45b201f",
+			"_type": "request"
+		},
+		{
+			"_id": "req_cfecd1e6975642d991b0e8a3232b850e",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"status\": \"Encerrado\"\n}"
+			},
+			"created": 1551445636442,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_a401523e037a42d6ae50cc46a4b6e514",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1548848319314.625,
+			"method": "PUT",
+			"modified": 1552908805823,
+			"name": "ChangeStatus",
+			"parameters": [],
+			"parentId": "fld_3bc91ee991c9462696f86005d3a3f70d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/treinamentos/5c8e4b0d5bdb7d13b8320a68",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ae65ab73ac2f4d9384dbbe033a82ec48",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"nota\": 6.3,\n\t\"usuario\": \"5c437880f35f5e0f6c043242\"\n}"
+			},
+			"created": 1551445636454,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_c54afd3f06bc45dc8d113afbc30ff44b",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1548848106893.9062,
+			"method": "PUT",
+			"modified": 1551905743587,
+			"name": "SetNotas",
+			"parameters": [],
+			"parentId": "fld_3bc91ee991c9462696f86005d3a3f70d",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/treinamentos/notas/5c7ffe77191058281c67fd05",
+			"_type": "request"
+		}
+	]
+}
